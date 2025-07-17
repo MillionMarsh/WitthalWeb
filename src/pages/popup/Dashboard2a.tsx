@@ -8,7 +8,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
       <div className="bg-[#F0F8FA] w-[700px] max-h-[90vh] overflow-auto p-6 rounded border-2 border-blue-500 shadow-lg">
         {/* Title and X button in same line */}
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-center flex-1">Add LOAN DETAILS</h2>
+          <h2 className="text-xl font-bold text-center flex-1">ADD LOAN DETAILS</h2>
           <button
             onClick={onClose}
             className="text-gray-600 hover:text-black text-xl font-bold ml-4"
@@ -24,17 +24,17 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Invoice Number</label>
             <input
               type="text"
-              placeholder="Enter BL number"
+              placeholder="Invoice Number"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
 
           {/* Weight Details */}
           <div className="flex flex-col">
-            <label className="text-sm font-semibold">BL number</label>
+            <label className="text-sm font-semibold">BL Number</label>
             <input
               type="text"
-              placeholder="Total Weight"
+              placeholder="BL Number"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -46,7 +46,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             </label>
             <input
               type="text"
-              placeholder="Enter Contracts"
+              placeholder="Invoice Date"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -58,7 +58,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             </label>
             <input
               type="text"
-              placeholder="Price"
+              placeholder="REF Number"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -68,7 +68,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Supplier Name</label>
             <input
               type="text"
-              placeholder="Enter Proforma"
+              placeholder="Supplier Name"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -78,7 +78,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Paid Date</label>
             <input
               type="text"
-              placeholder="Amount"
+              placeholder="Paid Date"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -86,11 +86,16 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
           {/* Invoice Number */}
           <div className="flex flex-col">
             <label className="text-sm font-semibold">Currency</label>
-            <input
-              type="text"
-              placeholder="Enter Invoice Number"
+            <select
               className="border border-gray-300 px-3 py-2 rounded"
-            />
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select Currency
+              </option>
+              <option value="USD">USD</option>
+              <option value="ERO">ERO</option>
+            </select>
           </div>
 
           {/* Weight Details (again) */}
@@ -98,7 +103,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Amount</label>
             <input
               type="text"
-              placeholder="Total Weight"
+              placeholder="Amount"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -108,7 +113,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Tenor (60 days)</label>
             <input
               type="text"
-              placeholder="Amount"
+              placeholder="Tenor (60 days)"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -118,7 +123,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Due date</label>
             <input
               type="text"
-              placeholder="Enter Invoice Number"
+              placeholder="Due date"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>
@@ -128,7 +133,7 @@ export default function Dashboard2a({onClose}: dashboard2aProps) {
             <label className="text-sm font-semibold">Interest</label>
             <input
               type="text"
-              placeholder="Total Weight"
+              placeholder="% Interest"
               className="border border-gray-300 px-3 py-2 rounded"
             />
           </div>

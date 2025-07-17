@@ -9,7 +9,7 @@ export default function Dashboard1a({onClose}: Dashboard1aProps) {
       <div className="bg-[#F0F8FA] w-[700px] max-h-[90vh] overflow-auto p-6 rounded border-2 border-blue-500 shadow-lg">
         {/* Title and X button in same line */}
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-center flex-1">Add BL</h2>
+          <h2 className="text-xl font-bold text-center flex-1">ADD BL</h2>
           <button
             onClick={onClose}
             className="text-gray-600 hover:text-black text-xl font-bold ml-4"
@@ -55,7 +55,7 @@ export default function Dashboard1a({onClose}: Dashboard1aProps) {
           {/* PRICE */}
           <div className="flex flex-col">
             <label className="text-sm font-semibold">
-              PRICE <span className="text-red-600 font-bold">-</span>
+              Price <span className="text-red-600 font-bold">-</span>
             </label>
             <input
               type="text"
@@ -110,7 +110,7 @@ export default function Dashboard1a({onClose}: Dashboard1aProps) {
           {/* Ship Details column (2-wide vertically stacked) */}
           <div className="col-span-2 flex flex-col gap-2">
             <div className="flex flex-col">
-              <label className="text-sm font-semibold">Ship name</label>
+              <label className="text-sm font-semibold">Ship Name</label>
               <input
                 type="text"
                 placeholder="Ship name"
